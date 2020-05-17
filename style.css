@@ -4,9 +4,25 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
+
+
+@font-face{
+  font-family: PopLight;
+  src: url("fonts/Poppins-Light.ttf");
 }
+
+@font-face{
+  font-family: PopRegular;
+  src: url("fonts/Poppins-Regular.ttf");
+}
+
+@font-face{
+  font-family: FuturaBold;
+  src: url("fonts/FuturaLT-Bold.ttf");
+}
+
+
+
 
 /*NAV BAR*/
 
@@ -36,12 +52,14 @@ nav {
     color: #1c1c1d;
     font-size: 15px;
     text-decoration: none;
+    font-family: PopRegular;
     
 }
 
 
 
 /*HOME PAGE*/
+
 .homepage {
     height: 100vh;
 }
@@ -54,20 +72,30 @@ nav {
 }
 
 .logo {
-    
-    
-    
+  position: relative;
 }
 
-.logo img{
-    
+.logoin {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  height: 40%;
+
+}
+
+.infinite {
+  position: absolute;
+  top: 65%;
+  left: 20%;
+  height: 15%;
+}
+
+.rec {
+   height: 100%; 
    width: 100%;
 }
 
-.slider {
-    
-    flex-grow: 1;
-}
+
 
 
 #sliding {
@@ -124,3 +152,112 @@ nav {
         left: -400%;
     }
 }
+
+
+/*ABOUT US*/
+
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 80px 0px;
+
+}
+
+.description {
+    width: 50%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s all ease-in-out;
+}
+
+.description-appear {
+    
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.description h3{
+    font-size: 45px;
+    padding-bottom: 30px;
+    font-family: FuturaBold;
+    color: #444444;
+}
+
+.description p{
+    padding: 20px 0px;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: PopLight;
+}
+
+
+/*GALLERY*/
+.gallery-section{
+    width: 100%;
+    padding: 60px 0;
+    background: white;
+  }
+  
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .gallery-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #444444;
+    font-family: FuturaBold;
+    font-size: 50px;
+  }
+  
+  .border{
+    margin-top: 100px;
+    margin-bottom: 100px ;
+  }
+  
+  .gallery-section .gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  
+  .gallery-section .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .gallery-section .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+  }
+  
+  .gallery-section .image:hover img{
+    transform: scale(1.1);
+  }
+  
+  @media screen and (max-width:960px) {
+    .gallery-section .image{
+      flex: 33.33%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .gallery-section .image{
+      flex: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .gallery-section .image{
+      flex: 100%;
+    }
+  }
+  
