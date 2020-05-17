@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 
 
@@ -21,6 +22,10 @@
   src: url("fonts/FuturaLT-Bold.ttf");
 }
 
+@font-face{
+  font-family: Futura;
+  src: url("fonts/FuturaLT.ttf");
+}
 
 
 
@@ -158,10 +163,15 @@ nav {
 
 .aboutus {
     display: flex;
+    height: 100vh;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 80px 0px;
+    padding: 80px 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+  
+  
 
 }
 
@@ -190,15 +200,64 @@ nav {
     font-size: 20px;
     text-align: justify;
     text-justify: inter-word;
-    font-family: PopLight;
+    font-family: Futura;
+}
+
+/*Divider*/
+.divider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+ 
+  padding-top: 40px;
+
+  font-size: 45px;
+  padding-bottom: 50px;
+  font-family: FuturaBold;
+  color: #444444;
+
 }
 
 
+
+
 /*GALLERY*/
+.residential {
+  display: flex;
+  height: 50vh;
+  
+}
+
+.room-gallery {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+
+  
+}
+
+.room-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: PopLight;
+  color: #696969;
+  
+
+}
+
+
 .gallery-section{
     width: 100%;
     padding: 60px 0;
-    background: white;
+    
   }
   
   .inner-width{
@@ -261,3 +320,56 @@ nav {
     }
   }
   
+
+  /*FOOTER*/
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    padding: 70px 0;
+    background-image: linear-gradient(to bottom, rgb(233, 233, 233) , rgb(196, 196, 196));
+  
+  }
+
+  .follow-us {
+    color: white;
+    font-family: PopRegular;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-logos{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .btn{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+  
+    margin: 10px;
+
+    color: #e0e0e0;
+    overflow: hidden;
+    position: relative;
+  }
+  .btn i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+  }
+  .btn:hover i{
+    transform: scale(1.2);
+    color: #ffffff;
+  }
+ 
