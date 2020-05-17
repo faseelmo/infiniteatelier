@@ -1,11 +1,27 @@
 /*GALLERY*/
-$(".gallery").magnificPopup({
+$(".gallery-retail").magnificPopup({
     delegate: 'a',
     type: 'image',
     gallery:{
       enabled: true
     }
-  });
+});
+
+$(".gallery-residential").magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery:{
+      enabled: true
+    }
+});
+
+$(".gallery-office").magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery:{
+      enabled: true
+    }
+});
 
 /*Fade IN*/
 
