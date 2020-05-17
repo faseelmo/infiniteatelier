@@ -205,21 +205,25 @@ nav {
 
 /*Divider*/
 .divider {
-  display: flex;
-  justify-content: center;
+  display: grid;
   width: 100%;
   height: 250px;
   overflow: hidden;
- 
   padding-top: 40px;
-
-  font-size: 45px;
+  font-size: 30px;
   padding-bottom: 50px;
   font-family: FuturaBold;
   color: #444444;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
 
 }
 
+.divider-left {
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -285,6 +289,24 @@ nav {
     flex-wrap: wrap-reverse;
     justify-content: center;
   }
+
+  .gallery-retail {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .gallery-residential {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .gallery-office {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
   
   .gallery-section .image{
     flex: 25%;
@@ -331,12 +353,12 @@ nav {
     height: 10%;
     overflow: hidden;
     padding: 70px 0;
-    background-image: linear-gradient(to bottom, rgb(233, 233, 233) , rgb(196, 196, 196));
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) , rgb(245, 245, 245));
   
   }
 
   .follow-us {
-    color: white;
+    color: rgb(161, 161, 161);
     font-family: PopRegular;
 
     display: flex;
@@ -359,7 +381,7 @@ nav {
   
     margin: 10px;
 
-    color: #e0e0e0;
+    color: #b9b9b9;
     overflow: hidden;
     position: relative;
   }
@@ -370,6 +392,6 @@ nav {
   }
   .btn:hover i{
     transform: scale(1.2);
-    color: #ffffff;
+    color: #525252;
   }
  
