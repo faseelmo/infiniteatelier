@@ -672,4 +672,42 @@ nav {
     
   }
 
+  @media screen and (max-width:300px) {
+    .homepage {
+      height: 55vh;
+    }
+  
+    .description h2 {
+      font-size: 30px;
+    }
+
+    .description p{
+      font-size: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .aboutus-page {
+      height: 180vh;
+    }
+
+    .profile {
+      padding-top: 40%;
+    }
+    .profile img {
+      width: 70%;
+    }
+
+    .divider-left {
+      left: 20%;
+    }
+
+    .residential-page {
+      height: 120vh;
+    }
+
+    
+  }
+
+
   
