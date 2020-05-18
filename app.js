@@ -37,3 +37,15 @@ function scrollAppear(){
 
 window.addEventListener('scroll',scrollAppear)
 
+
+function scrollprofileAppear(){
+  var introText = document.querySelector('.divider');
+  var introPosition = introText.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight / 1.7;
+
+  if(introPosition < screenPosition) {
+      introText.classList.add('divider-appear');
+  }
+}
+
+window.addEventListener('scroll',scrollprofileAppear)
