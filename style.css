@@ -546,7 +546,7 @@ nav {
     width: 100%;
     padding-left: 14px;
     padding-right: 14px;
-    height: 160vh;
+    height: 300vh;
   
   }
   
@@ -557,6 +557,9 @@ nav {
   
   }
   
+  .profile {
+    display: none;
+  }
   
     
   
@@ -615,7 +618,7 @@ nav {
     }
 
     .aboutus {
-      height: 160vh;
+      height: 300vh;
     }
 
     .profile {
@@ -655,7 +658,7 @@ nav {
     }
 
     .aboutus {
-      height: 180vh;
+      height: 300vh;
     }
 
     .profile {
