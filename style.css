@@ -485,7 +485,7 @@ nav {
     }
   
     .divider {
-      height: 20vh;
+      height: 30vh;
     }
 
     .divider-left {
@@ -511,7 +511,7 @@ nav {
     }
   
     .residential-page {
-      height: 100vh;
+      height: 150vh;
     }
   
     .residential {
@@ -557,9 +557,6 @@ nav {
   
   }
   
-  .profile {
-    display: none;
-  }
   
     
   
@@ -596,7 +593,7 @@ nav {
     }
 
     .residential-page {
-      height: 80vh;
+      height: 150vh;
     }
 
     
@@ -673,7 +670,7 @@ nav {
     }
 
     .residential-page {
-      height: 120vh;
+      height: 150vh;
     }
 
     
