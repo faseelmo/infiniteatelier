@@ -454,11 +454,7 @@ nav {
       width: 40%;
     }
   
-    .divider-left {
-      
-      left: 13%;
-    
-    }
+   
     
   
     
@@ -488,11 +484,7 @@ nav {
       height: 30vh;
     }
 
-    .divider-left {
-      
-      left: 13%;
     
-    }
     
   
     
@@ -511,7 +503,7 @@ nav {
     }
   
     .residential-page {
-      height: 150vh;
+      height: 100vh;
     }
   
     .residential {
@@ -542,20 +534,20 @@ nav {
   
   .aboutus {
     display: flex;
-    justify-content: space-between;
+    
     width: 100%;
     padding-left: 14px;
     padding-right: 14px;
-    height: 300vh;
+    height: 150vh;
   
   }
   
   .divider-left {
       
-    
     left: 34%;
   
   }
+
   
   
     
@@ -578,18 +570,18 @@ nav {
     }
 
     .aboutus {
-      height: 170vh;
+      height: 120vh;
     }
 
     .profile {
-      padding-top: 40%;
+      padding-top: 10%;
     }
     .profile img {
       width: 70%;
     }
 
     .divider-left {
-      left: 29%;
+      padding-top: 10%;
     }
 
     .residential-page {
@@ -615,7 +607,7 @@ nav {
     }
 
     .aboutus {
-      height: 300vh;
+      height: 150vh;
     }
 
     .profile {
@@ -631,7 +623,7 @@ nav {
     }
 
     .residential-page {
-      height: 200vh;
+      height: 180vh !important;
     }
 
     
@@ -655,7 +647,7 @@ nav {
     }
 
     .aboutus {
-      height: 300vh;
+      height: 150vh;
     }
 
     .profile {
@@ -670,7 +662,7 @@ nav {
     }
 
     .residential-page {
-      height: 150vh;
+      height: 50vh;
     }
 
     
