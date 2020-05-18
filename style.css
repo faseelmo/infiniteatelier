@@ -249,10 +249,12 @@ nav {
 
 
 /*GALLERY*/
+
+.residential-page {
+  height: 70vh;
+}
 .residential {
   display: flex;
-  height: 100vh;
-  
 }
 
 .room-gallery {
@@ -423,6 +425,7 @@ nav {
     justify-content: center;
   }
 
+ 
 
   @media screen and (max-width:1100px) {
     .homepage {
