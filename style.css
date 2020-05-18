@@ -240,8 +240,9 @@ nav {
 }
 
 .divider-left {
-  position: absolute;
-  left: 20%;
+
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -596,6 +597,43 @@ nav {
 
     
   }
+  
+  @media screen and (max-width:480px) {
+    .homepage {
+      height: 70vh;
+    }
+  
+    .description h2 {
+      font-size: 30px;
+    }
+
+    .description p{
+      font-size: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .aboutus-page {
+      height: 160vh;
+    }
+
+    .profile {
+      padding-top: 40%;
+    }
+    .profile img {
+      width: 70%;
+    }
+
+    .divider-left {
+      left: 40%;
+    }
+
+    .residential-page {
+      height: 200vh;
+    }
+
+    
+  }
 
   @media screen and (max-width:400px) {
     .homepage {
@@ -633,3 +671,5 @@ nav {
 
     
   }
+
+  
