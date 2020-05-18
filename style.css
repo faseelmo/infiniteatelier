@@ -651,7 +651,7 @@ nav {
     }
 
     .aboutus-page {
-      height: 160vh;
+      height: 160vh !important;
     }
 
     .profile {
@@ -666,13 +666,16 @@ nav {
     }
 
     .residential-page {
-      height: 160vh;
+      height: 160vh !important;
     }
 
     
   }
 
-  @media only screen and (min-device-width : 375px) and (max-device-width : 812px)
+  @media only screen 
+  and (width : 375px) 
+  and (height : 635px)
+  and (orientation : portrait)  
   and (-webkit-device-pixel-ratio : 3) { 
     .homepage {
       height: 55vh;
@@ -689,7 +692,7 @@ nav {
     }
 
     .aboutus-page {
-      height: 160vh;
+      height: 160vh !important;
     }
 
     .profile {
@@ -704,7 +707,7 @@ nav {
     }
 
     .residential-page {
-      height: 160vh;
+      height: 160vh !important;
     }
     }
 
