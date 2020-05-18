@@ -170,9 +170,7 @@ nav {
   display: none;
 }
 
-.aboutus-page {
-  height: 100vh;
-}
+
 
 .aboutus {
     display: flex;
@@ -182,6 +180,8 @@ nav {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 10%;
+
+    height: 100vh;
   
 }
 
@@ -429,13 +429,12 @@ nav {
       height: 60vh;
     }
     
-    .aboutus-page{
-      height: 200vh;
-    }
+   
 
     .aboutus {
       display: flex;
       flex-direction: column;
+      height: 200vh;
     }
   
     .description {
@@ -473,7 +472,7 @@ nav {
       height: 70vh;
     }
     
-    .aboutus-page{
+    .aboutus {
       height: 190vh;
     }
     .profile {
@@ -540,12 +539,14 @@ nav {
     
   }
   
+  
   .aboutus {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-left: 14px;
     padding-right: 14px;
+    height: 160vh;
   
   }
   
@@ -576,7 +577,7 @@ nav {
       padding-left: 20px;
     }
 
-    .aboutus-page {
+    .aboutus {
       height: 170vh;
     }
 
@@ -613,12 +614,13 @@ nav {
       padding-left: 20px;
     }
 
-    .aboutus-page {
+    .aboutus {
       height: 160vh;
     }
 
     .profile {
       padding-top: 40%;
+      padding-bottom: 40%;
     }
     .profile img {
       width: 70%;
@@ -635,81 +637,7 @@ nav {
     
   }
 
-  @media screen and (max-width:400px) {
-    .homepage {
-      height: 55vh;
-    }
-  
-    .description h2 {
-      font-size: 30px;
-    }
 
-    .description p{
-      font-size: 15px;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-
-    .aboutus-page {
-      height: 160vh !important;
-    }
-
-    .profile {
-      padding-top: 40%;
-    }
-    .profile img {
-      width: 70%;
-    }
-
-    .divider-left {
-      left: 20%;
-    }
-
-    .residential-page {
-      height: 160vh !important;
-    }
-
-    
-  }
-
-  @media only screen 
-  and (width : 375px) 
-  and (height : 635px)
-  and (orientation : portrait)  
-  and (-webkit-device-pixel-ratio : 3) { 
-    .homepage {
-      height: 55vh;
-    }
-  
-    .description h2 {
-      font-size: 30px;
-    }
-
-    .description p{
-      font-size: 15px;
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-
-    .aboutus-page {
-      height: 160vh !important;
-    }
-
-    .profile {
-      padding-top: 40%;
-    }
-    .profile img {
-      width: 70%;
-    }
-
-    .divider-left {
-      left: 20%;
-    }
-
-    .residential-page {
-      height: 160vh !important;
-    }
-    }
 
   @media screen and (max-width:300px) {
     .homepage {
@@ -726,7 +654,7 @@ nav {
       padding-left: 20px;
     }
 
-    .aboutus-page {
+    .aboutus {
       height: 180vh;
     }
 
@@ -747,6 +675,8 @@ nav {
 
     
   }
+
+  
 
 
   
