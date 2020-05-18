@@ -66,6 +66,7 @@ nav {
 
 
 
+
 /*HOME PAGE*/
 
 .homepage {
@@ -162,20 +163,26 @@ nav {
 }
 
 
+
 /*ABOUT US*/
+
+.hidden-logo {
+  display: none;
+}
+
+.aboutus-page {
+  height: 100vh;
+}
 
 .aboutus {
     display: flex;
-    height: 100vh;
+    
     justify-content: space-between;
     width: 100%;
-    margin: auto;
-    padding: 80px 10px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10%;
   
-  
-
 }
 
 .description {
@@ -186,16 +193,17 @@ nav {
 }
 
 .description-appear {
-    
     opacity: 1;
     transform: translateY(0px);
 }
 
-.description h3{
-    font-size: 45px;
+.description h2{
+    font-size: 40px;
     padding-bottom: 30px;
     font-family: FuturaBold;
     color: #444444;
+    display: flex;
+    justify-content: center;
 }
 
 .description p{
@@ -207,26 +215,34 @@ nav {
     letter-spacing: 1px;
 }
 
+.profile {
+  padding-top: 5%;
+}
+
 /*Divider*/
 .divider {
-  display: grid;
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-  padding-top: 40px;
+  height: 30vh;
   font-size: 30px;
-  padding-bottom: 50px;
   font-family: FuturaBold;
   color: #444444;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+  position: relative;
+  padding-top: 5%;
 
 }
 
+.divider-appear {
+  
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 .divider-left {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  left: 20%;
+
 }
 
 
@@ -372,7 +388,6 @@ nav {
   .social-logos{
     display: flex;
     justify-content: center;
-
     width: 100%;
     text-align: center;
   }
@@ -399,3 +414,222 @@ nav {
     color: #525252;
   }
  
+  .follow-us-lol {
+    color: rgb(161, 161, 161);
+    font-family: PopRegular;
+    font-size: 7px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  @media screen and (max-width:1100px) {
+    .homepage {
+      height: 60vh;
+    }
+    
+    .aboutus-page{
+      height: 200vh;
+    }
+
+    .aboutus {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .description {
+      min-width: 100%;
+      line-height: 2;
+    }
+  
+    .profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 25%;
+      padding-bottom: 0%;
+    }
+  
+    .profile img {
+      width: 40%;
+    }
+  
+    .divider-left {
+      
+      left: 13%;
+    
+    }
+    
+  
+    
+    
+    
+  
+  }
+  
+  @media screen and (max-width:960px) {
+    .homepage {
+      height: 70vh;
+    }
+    
+    .aboutus-page{
+      height: 190vh;
+    }
+    .profile {
+      padding-top: 20%;
+      padding-bottom: 10%;
+    }
+
+    .profile img {
+      width: 50%;
+    }
+  
+    .divider {
+      height: 20vh;
+    }
+
+    .divider-left {
+      
+      left: 13%;
+    
+    }
+    
+  
+    
+    
+  }
+  
+  @media screen and (max-width:768px) {
+    .homepage {
+      height: 110vh;
+    }
+  
+    .content {
+      top: 0%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .residential-page {
+      height: 100vh;
+    }
+  
+    .residential {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  .room-gallery {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+  
+    
+  }
+  
+  .room-description {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .aboutus {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+  
+  }
+  
+  .divider-left {
+      
+    
+    left: 34%;
+  
+  }
+  
+  
+    
+  
+  }
+  
+  @media screen and (max-width:550px) {
+    .homepage {
+      height: 90vh;
+    }
+  
+    .description h2 {
+      font-size: 30px;
+    }
+
+    .description p{
+      font-size: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .aboutus-page {
+      height: 170vh;
+    }
+
+    .profile {
+      padding-top: 40%;
+    }
+    .profile img {
+      width: 70%;
+    }
+
+    .divider-left {
+      left: 29%;
+    }
+
+    .residential-page {
+      height: 80vh;
+    }
+
+    
+  }
+
+  @media screen and (max-width:400px) {
+    .homepage {
+      height: 55vh;
+    }
+  
+    .description h2 {
+      font-size: 30px;
+    }
+
+    .description p{
+      font-size: 15px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .aboutus-page {
+      height: 160vh;
+    }
+
+    .profile {
+      padding-top: 40%;
+    }
+    .profile img {
+      width: 70%;
+    }
+
+    .divider-left {
+      left: 20%;
+    }
+
+    .residential-page {
+      height: 160vh;
+    }
+
+    
+  }
