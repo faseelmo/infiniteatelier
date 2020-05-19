@@ -102,6 +102,8 @@ nav {
 .rec {
    height: 100%; 
    width: 100%;
+   background-image: linear-gradient(to bottom, rgb(255, 255, 255) , rgb(245, 245, 245));
+   
 }
 
 
@@ -496,13 +498,17 @@ nav {
   
   @media screen and (max-width:768px) {
     .homepage {
-      height: 110vh;
+      height: 130vh;
     }
   
     .content {
       top: 0%;
       display: flex;
       flex-direction: column;
+    }
+
+    .logo {
+      height: 70vh;
     }
   
     .residential-page {
@@ -541,15 +547,18 @@ nav {
     width: 100%;
     padding-left: 14px;
     padding-right: 14px;
-    height: 150vh;
+    height: 140vh;
   
   }
   
-  .divider-left {
+  .divider {
       
-    left: 34%;
+    padding-top: 20% ;
+
   
   }
+
+  
 
   
   
@@ -559,7 +568,7 @@ nav {
   
   @media screen and (max-width:550px) {
     .homepage {
-      height: 90vh;
+      height: 120vh;
     }
   
     .description h2 {
@@ -588,7 +597,7 @@ nav {
     }
 
     .residential-page {
-      height: 150vh;
+      height: 100vh;
     }
 
     
@@ -596,7 +605,11 @@ nav {
   
   @media screen and (max-width:480px) {
     .homepage {
-      height: 70vh;
+      height: 90vh;
+    }
+
+    .logo {
+      height: 50vh;
     }
   
     .description h2 {
@@ -621,12 +634,10 @@ nav {
       width: 70%;
     }
 
-    .divider-left {
-      left: 40%;
-    }
+    
 
     .residential-page {
-      height: 180vh !important;
+      height: 190vh ;
     }
 
     
@@ -636,7 +647,11 @@ nav {
 
   @media screen and (max-width:300px) {
     .homepage {
-      height: 55vh;
+      height: 60vh;
+    }
+
+    .logo {
+      height: 30vh;
     }
   
     .description h2 {
@@ -665,7 +680,7 @@ nav {
     }
 
     .residential-page {
-      height: 50vh;
+      height: 140vh;
     }
 
     
